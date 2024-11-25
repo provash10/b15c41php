@@ -1,0 +1,160 @@
+Class 41 @Database Intro
+https://www.facebook.com/muntasir.fahim8/videos/1079912090005615/?idorvanity=7295095747278784
+
+#Database
+Mongodb, Mysql, sqllight etc.........
+###programing language >>> c++, c#, 
+==========================================================
+#Database
+XAMM Control Panel >>> MySQL >>> Run/start >>> Admin >>> Database>>>
+>>> http://localhost/phpmyadmin/ >>> phpmyadmin page
+Or google >>>phpmyadmin>>> mysql database phpmyadmin page>>>
+
+====================================================================
+===========School Management System=========
+=====>Database : school_management_system 
+rules: a. small letter b. no space c. use underspace
+
+1. students_information (Data Table)
+2. teachers_information (Data Table)
+3. staffs_information   (Data Table)  
+
+###Create a Database >>> Go to phpMyAdmin >>>
+
+>>>New >>>> 
+>>> Create database 
+>>>> Database name >>> school_management_system_1
+  >>> formate >>>empty  *****utf8_general_ci  ***** auto suggetion...
+  >>>Create. >>> ok
+
+
+
+school_management_system_1
+Now Create Table 
+****Table name >>>> plurals and small letter use
+what type of information keep in it >>> 
+Students >>> id, name, roll, class, phone, address, email etc.....
+1. Table Name >>> students  column/row 7
+
+Name    -type             -Lenght/Values   - default    -Attributes  -A_I Comment 
+id      -INT                              - None       -unsigned    - Check ok
+name    - string/varchar   -191
+roll    -number/INT
+class   -number/INT
+phone   -string/varchar     -191
+address -string/varchar     -191
+email   -string/varchar     -191
+>>>>Save
+
+
+school_management_system_1 >>> students(data table)>>> structure
+
+Create new data table for students from school_management_system_1
+>>>school_management_system_1 >>> data table 2
+
+****Table name >>>> plurals and small letter use
+what type of information keep in it >>> 
+teachers >>> id, name, designation, phone, address, email etc.....
+
+table column add korte hove => 4 + 2 add= 6 ok.....
+
+Name    -type             -Lenght/Values   - default    -Attributes  -A_I Comment 
+id      -INT                              - None       -unsigned    - Check ok
+name    - string/varchar   -191
+designation    -string/varchar -191
+
+phone   -string/varchar     -191
+address -string/varchar     -191
+email   -string/varchar     -191
+>>>>Save
+
+****Table name >>>> plurals and small letter use
+what type of information keep in it >>> 
+staffs >>> id, name, designation, phone, address, email etc.....
+Name    -type             -Lenght/Values   - default    -Attributes  -A_I Comment 
+id      -INT                              - None       -unsigned    - Check ok
+name    - string/varchar   -191
+designation    -string/varchar -191
+
+phone   -string/varchar     -191
+address -string/varchar     -191
+email   -string/varchar     -191
+>>>>Save
+
+---------------------------
+*****2 way to upload/store data  a. SQL(write query) b. insert (manually)
+
+b. insert (manually) >>> data manually
+
+Click students >>> insert >>>
+
+id  >>> auto
+name >>> Rumel
+roll >>> 1
+class >>> 9
+phone >>> +8801710112233
+address >>> Uttara, Sector-9
+email >>> rumel123@gmail.com
+
+
+============CRUD==========
+C = Create (Data Create)
+R = Read   (Browse/structure deke/kore data read korte partesi)
+U = Update (double click kore any change kora (baire click for update) k update bole)
+D = Delete (Remove id/ remove all) 
+
+*****MySQL => Hard Delete >>>> Not any Undo Option.
+*****Data Insert id(id all time unique) must according to rules if any person is absent....
+
+Apllicaation  => 60%-70% CRUD
+Remaining => 40%-30%  (Business Logic)
+
+******SQL 
+S = Structured
+Q = Query 
+L = Language
+
+How can write Query 
+4 Types Query
+C = Create (Data Create)
+R = Read   (Browse/structure deke/kore data read korte partesi)
+U = Update (double click kore any change kora (baire click for update) k update bole)
+D = Delete (Remove id/ remove all) 
+Software a automatically query hobe.
+
+>>>> 
+Create =>
+INSERT INTO >>> 
+Table Name >>> students (name, roll, class, phone, address, email) VALUES ('name', roll, class(use string), 'phone', 'address','email' );
+
+Go To students >>> SQL
+
+INSERT INTO students (name, roll, class, phone, address, email) VALUES ('Tina', 5, 9, '+8801710100005', 'Mirpur-1,Dhaka','tina59@gmail.com' );
+
+>>> Go 
+check browse see students data table .......ok
+INSERT INTO students (name, roll, class, phone, address, email) VALUES ('Mina', 6, 9, '+8801710100009', 'Uttora,Dhaka','mina69@gmail.com');
+Directly database thekeo data SQL kore insert kora jabe >>> auto keyword (like students/teachers/staffs data table)khuje nibe....
+INSERT INTO students (name, roll, class, phone, address, email) VALUES ('Mina', 6, 9, '+8801710100009', 'Uttora,Dhaka','mina69@gmail.com');
+
+
+
+For Teachers >>>
+INSERT INTO teachers (name, designation, phone, email, address) VALUES ('Md. Rashid Kamal', 'Assistant Teacher', '+8801710100505','mrkamal_505@gmail.com','Uttora,Dhaka');
+INSERT INTO teachers (name, designation, phone, email, address) VALUES ('Mohon Lal', 'Assistant Teacher', '+8801710100506','mohonlal_506@gmail.com','Banani,Dhaka');
+
+
+For Staffs >>>
+
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Abul Kamal', 'Head Clark', '+8801710300101','abulkamal_311@gmail.com','Mirpur-2,Dhaka');
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Hasnath Abdullah', 'Assistant Head Clark', '+8801710300102','habdullah_312@gmail.com','Dhanmondi,Dhaka');
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Arifa Rahman', 'Assistant Head Clark', '+8801710300103','arifa_313@gmail.com','jigatola,Dhaka');
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Zahid Hasan', 'Hotel Manager', '+8801710300104','zahidhasan_314@gmail.com','kathalbagan,Dhaka');
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Ruma islam', 'Assistant Hotel Manager', '+8801710300105','rumaislam_315@gmail.com','khilgaon,Dhaka');
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Sazzad Hossain', 'Assistant Hotel Manager', '+8801710300106','sazzad_316@gmail.com','Razlaxmi,Dhaka');
+
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Abdul Goni', 'Librarian', '+8801710300107','abdulgoni_317@gmail.com','Bongshal,Dhaka');
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Husneara Husna', 'Assistant Librarian', '+8801710300108','husneara_318@gmail.com','Hatirjhil,Dhaka');
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Mojid Mia', 'Head of Lab', '+8801710300109','mojidmia_318@gmail.com','Khilkhet,Dhaka');
+INSERT INTO staffs (name, designation, phone, email, address) VALUES ('Najmun Islam', 'Assistant Aya', '+8801710300110','najmun_319@gmail.com','Mirpur-2,Dhaka');
+
