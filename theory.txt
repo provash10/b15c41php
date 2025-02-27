@@ -1,6 +1,5 @@
 Class 41 @Database Intro
-https://www.facebook.com/muntasir.fahim8/videos/1079912090005615/?idorvanity=7295095747278784
-
+===========================
 #Database
 Mongodb, Mysql, sqllight etc.........
 ###programing language >>> c++, c#, 
